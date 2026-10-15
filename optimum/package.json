@@ -1,0 +1,9 @@
+{
+  "name": "optimum-oquv-markazi",
+  "version": "1.0.0",
+  "description": "OPTIMUM o'quv markazi sayti (Node.js, JSON database)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=16" },
+  "license": "MIT"
+}

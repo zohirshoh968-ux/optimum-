@@ -1,0 +1,51 @@
+[
+  {
+    "id": "745080afe4a5",
+    "name": "Mardonaliyev Olloyor",
+    "subject": "Ingliz tili",
+    "exp": "Mentor · IELTS 7+ · CEFR C1",
+    "photo": "/img/olloyor.jpg"
+  },
+  {
+    "id": "a31f5d365390",
+    "name": "Xolbotayev Xudoybergan",
+    "subject": "Ingliz tili",
+    "exp": "Mentor · IELTS 7+",
+    "photo": "/img/xudoybergan.jpg"
+  },
+  {
+    "id": "4050a12ecc68",
+    "name": "Hasanboyev Husniddin",
+    "subject": "Matematika",
+    "exp": "Mentor · GRE xalqaro sertifikat",
+    "photo": "/img/husniddin.jpg"
+  },
+  {
+    "id": "3fc0dbe4428c",
+    "name": "Qilichbek Abduolimov",
+    "subject": "Rus tili",
+    "exp": "Mentor · CEFR C1",
+    "photo": "/img/qilichbek.jpg"
+  },
+  {
+    "id": "c25454d64c6c",
+    "name": "Turdaliyev Ahmadullo",
+    "subject": "Arab tili",
+    "exp": "Mentor · CEFR B1",
+    "photo": "/img/ahmadullo.jpg"
+  },
+  {
+    "id": "7b9994f20bd9",
+    "name": "Ne'matov Isfandiyor",
+    "subject": "Biologiya",
+    "exp": "Mentor",
+    "photo": "/img/isfandiyor.jpg"
+  },
+  {
+    "id": "773f7b1a633d",
+    "name": "Ergashov Feruzbek",
+    "subject": "Dasturlash",
+    "exp": "Junior",
+    "photo": "/img/feruzbek.jpg"
+  }
+]

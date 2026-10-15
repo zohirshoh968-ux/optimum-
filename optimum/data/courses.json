@@ -1,0 +1,66 @@
+[
+  {
+    "id": "624bd499a908",
+    "icon": "fa-brands fa-python",
+    "name_uz": "IT dasturlash (Python)",
+    "name_ru": "IT программирование (Python)",
+    "name_en": "IT programming (Python)",
+    "desc": "Noldan professional dasturchigacha."
+  },
+  {
+    "id": "b48379f9239b",
+    "icon": "fa-code",
+    "name_uz": "Frontend",
+    "name_ru": "Фронтенд",
+    "name_en": "Frontend",
+    "desc": "HTML, CSS, JavaScript va zamonaviy veb."
+  },
+  {
+    "id": "fa420d0125be",
+    "icon": "fa-palette",
+    "name_uz": "Grafik dizayn",
+    "name_ru": "Графический дизайн",
+    "name_en": "Graphic design",
+    "desc": "Photoshop, Figma va ijodiy dizayn."
+  },
+  {
+    "id": "b5eefc3b029c",
+    "icon": "fa-language",
+    "name_uz": "Ingliz tili",
+    "name_ru": "Английский язык",
+    "name_en": "English",
+    "desc": "IELTS va CEFR darajalariga tayyorlov."
+  },
+  {
+    "id": "bc8b818317e1",
+    "icon": "fa-comments",
+    "name_uz": "Rus tili",
+    "name_ru": "Русский язык",
+    "name_en": "Russian",
+    "desc": "Gaplashuv va grammatika, CEFR tayyorlov."
+  },
+  {
+    "id": "348f304692e3",
+    "icon": "fa-moon",
+    "name_uz": "Arab tili",
+    "name_ru": "Арабский язык",
+    "name_en": "Arabic",
+    "desc": "Arab tilini bosqichma-bosqich o'rganing."
+  },
+  {
+    "id": "52056ebf8c70",
+    "icon": "fa-square-root-variable",
+    "name_uz": "Matematika",
+    "name_ru": "Математика",
+    "name_en": "Mathematics",
+    "desc": "Chuqur bilim va xalqaro imtihonlar."
+  },
+  {
+    "id": "8c763e586757",
+    "icon": "fa-dna",
+    "name_uz": "Biologiya",
+    "name_ru": "Биология",
+    "name_en": "Biology",
+    "desc": "Test va olimpiadalarga tayyorlov."
+  }
+]
