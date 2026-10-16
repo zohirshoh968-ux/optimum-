@@ -114,7 +114,7 @@ const SM={g:['s1','g'],y:['s2','yl'],r:['s3','rd']};
 const api=async(u,m='GET',b)=>{const r=await fetch('/api/'+u,{method:m,headers:{'Content-Type':'application/json','x-token':S.tok||''},body:b?JSON.stringify(b):undefined});const j=await r.json();if(!r.ok)throw Object.assign(new Error(j.error),{code:r.status});return j};
 function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('show');clearTimeout(toast.i);toast.i=setTimeout(()=>e.classList.remove('show'),3200)}
 /* ---- Navigatsiya ---- */
-function drawNav(){$('#links').innerHTML=[...NAV,'admin'].map(k=>`<a data-k="${k}" class="${S.page===k?'on':''}" onclick="go('${k}')">${t(k)}</a>`).join('')+`<select onchange="setLang(this.value)" title="${t('lang')}">${[['uz','O\'zbek'],['ru','Русский'],['en','English']].map(([k,n])=>`<option value="${k}" ${k===lang?'selected':''}>${n}</option>`).join('')}</select>`}
+function drawNav(){$('#links').innerHTML=NAV.map(k=>`<a data-k="${k}" class="${S.page===k?'on':''}" onclick="go('${k}')">${t(k)}</a>`).join('')+`<select onchange="setLang(this.value)" title="${t('lang')}">${[['uz','O\'zbek'],['ru','Русский'],['en','English']].map(([k,n])=>`<option value="${k}" ${k===lang?'selected':''}>${n}</option>`).join('')}</select>`}
 function setLang(l){lang=l;localStorage.setItem('lang',l);document.documentElement.lang=l;render()}
 async function go(k){
  if(k==='admin'&&!S.tok){$('#pinM').classList.add('show');$('#pinI').focus();return}
@@ -136,7 +136,7 @@ function render(){drawNav();if(!S.pub)return;const P=S.pub,my=S.my||{application
  $('#rankL').innerHTML=R.length?R.slice(3).map((r,i)=>`<div class="glass row"><span class="n">${i+4}</span>${esc(r.name)}<span class="s">${r.points}</span></div>`).join(''):`<div class="empty">${t('norank')}</div>`;
  $('#testT').textContent=t('tests');
  $('#testL').innerHTML=P.tests.length?P.tests.map((q,i)=>`<div class="glass card" style="margin-bottom:14px" id="q${q.id}"><b>${i+1}. ${esc(q.question)}</b>${q.options.map((o,j)=>`<button class="opt" onclick="answer('${q.id}',${j},this)">${esc(o)}</button>`).join('')}</div>`).join(''):`<div class="empty">${t('notest')}</div>`;
- $('#newsL').innerHTML=P.announcements.length?[...P.announcements].sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<div class="glass card" style="margin-bottom:16px"><h3>${esc(n.title)}</h3><p style="color:var(--mu);margin:8px 0">${esc(n.text)}</p><small style="color:var(--y)">${fmt(n.date)}</small></div>`).join(''):`<div class="empty">${t('nonews')}</div>`;
+ $('#newsL').innerHTML=P.announcements.length?[...P.announcements].sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<div class="glass card" style="margin-bottom:16px">${n.image?`<img src="${esc(n.image)}" alt="" loading="lazy" style="width:100%;max-height:360px;object-fit:cover;border-radius:16px;margin-bottom:14px;display:block">`:''}<h3>${esc(n.title)}</h3><p style="color:var(--mu);margin:8px 0">${esc(n.text)}</p><small style="color:var(--y)">${fmt(n.date)}</small></div>`).join(''):`<div class="empty">${t('nonews')}</div>`;
  $('#mt').placeholder=t('ph');$('#mbtn').textContent=t('send');
  const fm=my.messages.filter(m=>m.from==='admin').reverse();
  $('#fromL').innerHTML=fm.length?fm.map(m=>`<div class="glass msg">${esc(m.text)}<small>${fmt(m.date)}</small></div>`).join(''):`<div class="empty">${t('nomsg')}</div>`;
@@ -155,7 +155,7 @@ $('#pinF').onsubmit=async e=>{e.preventDefault();try{S.tok=(await api('admin/log
 /* ---- Admin panel ---- */
 const CFG={courses:{t:'Kurslar',i:'fa-book',f:[['icon','Ikonka (Font Awesome klass)'],['name_uz',"Nomi (o'zbek)"],['name_ru','Nomi (rus)'],['name_en','Nomi (ingliz)'],['desc','Tavsif'],['image','Kurs rasmi (galereyadan, ixtiyoriy)','file']],s:x=>x.name_uz},
  teachers:{t:'Ustozlar',i:'fa-chalkboard-user',f:[['name','Ism familya'],['subject','Fan'],['exp','Tajriba / daraja'],['photo','Rasm','file']],s:x=>x.name+' — '+x.subject},
- announcements:{t:"E'lonlar",i:'fa-bullhorn',f:[['title','Sarlavha'],['text','Matn','area']],s:x=>x.title},
+ announcements:{t:"E'lonlar",i:'fa-bullhorn',f:[['title','Sarlavha'],['text','Matn','area'],['image','Rasm (galereyadan, ixtiyoriy)','file']],s:x=>x.title},
  tests:{t:'Testlar',i:'fa-circle-question',f:[['question','Savol'],['o0','Variant 1'],['o1','Variant 2'],['o2','Variant 3'],['o3','Variant 4'],['correct',"To'g'ri javob (1-4)"]],s:x=>x.question}};
 const TABS=[['stats','Statistika','fa-chart-line'],['users',"O'quvchilar",'fa-users'],...Object.entries(CFG).map(([k,v])=>[k,v.t,v.i]),['applications','Arizalar','fa-file-signature'],['messages','Xabarlar','fa-envelope'],['progress','Natija qo\'shish','fa-clipboard-check'],['pin','PIN kod','fa-key']];
 let A={tab:'stats',d:null,q:'',edit:null};
@@ -181,5 +181,7 @@ async function addProg(e){e.preventDefault();const f=new FormData(e.target);awai
 async function reply(uid){const t=prompt('Javob matni:');if(t&&t.trim()){await api('admin/reply','POST',{userId:uid,text:t.trim()});toast('Yuborildi ✅');drawAdmin()}}
 async function chPin(e){e.preventDefault();const f=new FormData(e.target);try{await api('admin/pin','POST',{old:f.get('o'),new:f.get('n')});toast('PIN yangilandi. Qayta kiring.');S.tok=null;go('home')}catch(er){toast(er.message)}}
 /* ---- Boshlash ---- */
-(async()=>{if(!S.me)$('#reg').classList.add('show');const h=location.hash.slice(1);go(NAV.includes(h)?h:'home')})();
+(async()=>{if(!S.me)$('#reg').classList.add('show');const h=location.hash.slice(1);go(NAV.includes(h)||h==='admin'?h:'home')})();
+/* Manzil qatoriga #admin yozilsa admin panel (PIN so'raladi) ochiladi */
+addEventListener('hashchange',()=>{const h=location.hash.slice(1);if((NAV.includes(h)||h==='admin')&&h!==S.page)go(h)});
 </script></body></html>
