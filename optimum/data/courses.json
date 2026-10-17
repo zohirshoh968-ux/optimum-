@@ -5,8 +5,7 @@
     "name_uz": "IT dasturlash (Python)",
     "name_ru": "IT программирование (Python)",
     "name_en": "IT programming (Python)",
-    "desc": "Noldan professional dasturchigacha.",
-    "image": "/uploads/ddb0ba4f08b0.jpg"
+    "desc": "Noldan professional dasturchigacha."
   },
   {
     "id": "b48379f9239b",
@@ -14,8 +13,7 @@
     "name_uz": "Frontend",
     "name_ru": "Фронтенд",
     "name_en": "Frontend",
-    "desc": "HTML, CSS, JavaScript va zamonaviy veb.",
-    "image": "/uploads/7844d7974602.jpg"
+    "desc": "HTML, CSS, JavaScript va zamonaviy veb."
   },
   {
     "id": "fa420d0125be",
@@ -23,8 +21,7 @@
     "name_uz": "Grafik dizayn",
     "name_ru": "Графический дизайн",
     "name_en": "Graphic design",
-    "desc": "Photoshop, Figma va ijodiy dizayn.",
-    "image": "/uploads/1a9de9cfd750.jpg"
+    "desc": "Photoshop, Figma va ijodiy dizayn."
   },
   {
     "id": "b5eefc3b029c",
@@ -32,8 +29,7 @@
     "name_uz": "Ingliz tili",
     "name_ru": "Английский язык",
     "name_en": "English",
-    "desc": "IELTS va CEFR darajalariga tayyorlov.",
-    "image": "/uploads/c55760d1ddfb.jpg"
+    "desc": "IELTS va CEFR darajalariga tayyorlov."
   },
   {
     "id": "bc8b818317e1",
@@ -41,8 +37,7 @@
     "name_uz": "Rus tili",
     "name_ru": "Русский язык",
     "name_en": "Russian",
-    "desc": "Gaplashuv va grammatika, CEFR tayyorlov.",
-    "image": "/uploads/94753103a29b.jpg"
+    "desc": "Gaplashuv va grammatika, CEFR tayyorlov."
   },
   {
     "id": "348f304692e3",
@@ -50,8 +45,7 @@
     "name_uz": "Arab tili",
     "name_ru": "Арабский язык",
     "name_en": "Arabic",
-    "desc": "Arab tilini bosqichma-bosqich o'rganing.",
-    "image": "/uploads/c347724b563c.jpg"
+    "desc": "Arab tilini bosqichma-bosqich o'rganing."
   },
   {
     "id": "52056ebf8c70",
@@ -59,8 +53,7 @@
     "name_uz": "Matematika",
     "name_ru": "Математика",
     "name_en": "Mathematics",
-    "desc": "Chuqur bilim va xalqaro imtihonlar.",
-    "image": "/uploads/67c9ca65bb0f.jpg"
+    "desc": "Chuqur bilim va xalqaro imtihonlar."
   },
   {
     "id": "8c763e586757",
@@ -68,7 +61,6 @@
     "name_uz": "Biologiya",
     "name_ru": "Биология",
     "name_en": "Biology",
-    "desc": "Test va olimpiadalarga tayyorlov.",
-    "image": "/uploads/4d2ae5cbaba2.jpg"
+    "desc": "Test va olimpiadalarga tayyorlov."
   }
 ]

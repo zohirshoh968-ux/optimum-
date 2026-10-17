@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d31ac77b-85e9-4ebf-88d7-304e3bf2a388" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/optimum/data/courses.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/courses.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/optimum/data/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/results.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/optimum/data/tests.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/tests.json" afterDir="false" />
@@ -63,8 +62,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
       </set>
     </attachedChunks>
   </component>
@@ -80,7 +78,10 @@
       <workItem from="1792078934197" duration="1663000" />
       <workItem from="1792081214679" duration="2237000" />
       <workItem from="1792145861824" duration="852000" />
-      <workItem from="1792164856182" duration="1025000" />
+      <workItem from="1792164856182" duration="2644000" />
+      <workItem from="1792236160145" duration="2445000" />
+      <workItem from="1792253643795" duration="397000" />
+      <workItem from="1792254054591" duration="301000" />
     </task>
     <servers />
   </component>
