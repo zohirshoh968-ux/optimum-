@@ -193,7 +193,15 @@ async function addProg(e){e.preventDefault();const f=new FormData(e.target);awai
 async function reply(uid){const t=prompt('Javob matni:');if(t&&t.trim()){await api('admin/reply','POST',{userId:uid,text:t.trim()});toast('Yuborildi ✅');drawAdmin()}}
 async function chPin(e){e.preventDefault();const f=new FormData(e.target);try{await api('admin/pin','POST',{old:f.get('o'),new:f.get('n')});toast('PIN yangilandi. Qayta kiring.');S.tok=null;go('home')}catch(er){toast(er.message)}}
 /* ---- Boshlash ---- */
-(async()=>{if(!S.me)$('#reg').classList.add('show');const h=location.hash.slice(1);go(NAV.includes(h)||h==='admin'?h:'home')})();
-/* Manzil qatoriga #admin yozilsa admin panel (PIN so'raladi) ochiladi */
-addEventListener('hashchange',()=>{const h=location.hash.slice(1);if((NAV.includes(h)||h==='admin')&&h!==S.page)go(h)});
+(async()=>{
+  if(!S.me)$('#reg').classList.add('show');
+  let h=location.hash.slice(1);
+  if(location.pathname === '/admin' || location.pathname === '/admin/') h = 'admin';
+  go(NAV.includes(h)||h==='admin'?h:'home');
+})();
+/* Manzil qatoriga #admin yoki /admin yozilsa admin panel (PIN so'raladi) ochiladi */
+addEventListener('hashchange',()=>{
+  let h=location.hash.slice(1);
+  if((NAV.includes(h)||h==='admin')&&h!==S.page)go(h);
+});
 </script></body></html>

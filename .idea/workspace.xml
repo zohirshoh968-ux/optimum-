@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d31ac77b-85e9-4ebf-88d7-304e3bf2a388" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimum/data/courses.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/courses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimum/data/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/results.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimum/data/tests.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/tests.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimum/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimum/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimum/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimum/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/optimum/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +77,10 @@
       <workItem from="1792236160145" duration="2445000" />
       <workItem from="1792253643795" duration="397000" />
       <workItem from="1792254054591" duration="301000" />
+      <workItem from="1792255063655" duration="674000" />
+      <workItem from="1792302951164" duration="14000" />
+      <workItem from="1792332350520" duration="19000" />
+      <workItem from="1792336837995" duration="14000" />
     </task>
     <servers />
   </component>
